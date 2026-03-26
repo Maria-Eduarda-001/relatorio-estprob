@@ -28,7 +28,7 @@ execute:
 
 ## 📌 Introdução
 
-Descreva o contexto da prática e sua importância.
+Nesse experimento vamos observar como os fatores controlados da catapulta podem influenciar o lançamento da bolinha durante os 22 lançamentos.
 
 > Exemplo: análise da variabilidade em experimentos físicos utilizando uma catapulta.
 
@@ -36,16 +36,41 @@ Descreva o contexto da prática e sua importância.
 
 ## 🎯 Objetivos
 
-### Objetivo geral
-
-Descrever o objetivo principal da prática.
+Vamos observar os lançamentos com base nos níveis das variáveis utilizadas.
 
 ### Objetivos específicos
 
-- Coletar dados experimentais  
-- Aplicar estatística descritiva  
-- Construir gráficos  
-- Interpretar resultados  
+- Coletar os dados obtidos;
+- Organizar esses dados para a tabulação;
+- Fazer o código da tabulação em R;
+- Interpretar resultados obtidos;
+
+---
+
+## Níveis das Variáveis (de baixo para cima)
+
+- O- -> Nível 2
+- A+ -> Nível 3
+- B+ -> 90°
+- A- -> Nível 4
+
+### O que cada variável influencia no experimento
+
+## O Nível O-
+
+Ponto de referência, é o apoio superior da catapulta, pode influenciar o alinha mento ou ponto de apoio; essa variável afeta a geometria do movimento, assim ela influencia de forma mais indireta, atuando junto de A e de B. Pode vir a afetar a reprodução dos lançamentos;
+
+## O Nível A+
+
+Essa posição da tensão do elástico, representa a deformação do elástico, assim aumenta a energia potencial elástica e gera uma maior velocidade inicial da bolinha, dependendo dela podemos gerar um maior alcance da bolinha, mas também pode fazer com que os lançamentos sejam mais sensíveis;
+
+## O Nível B+
+
+Essa posição está relacionada ao ajuste do ângulo da catapulta, é um batente regulador do ângulo final, assim ele define o ângulo de saída da bolinha e acab influenciando o tempo do voo. Quando são ângulos próximos de 45° o alcance da bolinha maior será o alcance dela, assim sendo com ângulos muito baixos teremos uma "bola rasteira" e com ângulos muito altos essa bola subirá mais e consequentemente percorerrá uma distância horizontal menor;
+
+## O Nível A-
+
+Essa variável também vai influenciar na tensão do elástico mas em menor intensidade, ela influencia com uma menor energia armazenada e uma menor velocidade de lançamento. Em relação a distância percorrida pela bolinha essa variável impacta com um menor alcance médio e geralmente um maior controle e uma maior variabilidade da distância percorrida;
 
 ---
 
@@ -70,15 +95,17 @@ $$
 Descreva como o experimento foi realizado.
 :::
 
-- Materiais utilizados  
-- Procedimento  
-- Número de repetições  
+- Materiais utilizados: Uma catapulta (já com as variáveis identifacadas e com o elástico) cedida pelo professor que ministra as aulas do curso assim como duas presilhas, uma trena, uma bolinha, giz branco de lousa, uma carteira da faculdade e uma régua;
+
+- Procedimento:  Primeiro o professor separou uma  carteira, onde a catapulta foi "presa" com a ajuda das duas presilhas, uma foi colocada em frente a catapulta e a outra foi colocada do lado da catapulta (rente ao lado da mesa em que a catapulta está em cima), logo depois colocamos a mesa de forma reta em uma junta do piso da sala e organizamos os alunos para, anotar os lançamentos, marcar onde a bolinha iria cair, medir com a trena a distância percorrida pela bolinha e fazer o lançamento da bolinha com ajuda da catapulta;
+
+- Número de repetições: Fizemos esse processo por 22 lançamentos seguidos, até que o elástico estourou, e por isso finalizamos antes dos esperados 40 lançamentos.
 
 ---
 
 ## 🔍 Resultados e Discussão
 
-Apresente e interprete os resultados obtidos a partir dos dados coletados.
+Apresentando e interpretando os resultados obtidos dos dados coletados no experimento.
 
 - Descreva os principais resultados numéricos (média, variabilidade, etc.).
 - Comente o comportamento dos dados observados nos gráficos.
