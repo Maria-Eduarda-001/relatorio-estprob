@@ -1,6 +1,6 @@
 ---
 # Só mude aqui!!!!
-author: "Aluno"
+author: "Maria Eduarda Motta Rosa"
 title: "Relatório de Aula Prática 02 - Foguete"
 bibliography: referencias.bib
 # A partir daqui nao faca alteracoes!!!!!
@@ -28,7 +28,7 @@ execute:
 
 ## 📌 Introdução
 
-Aquiii
+Pegamos um exercício do livro fornecido online pelo professor. Aqui analisaremos a temperatura do anel de vedação do motor do foguete Challenger.
 
 > Exemplo: análise da variabilidade em experimentos físicos utilizando uma catapulta.
 
