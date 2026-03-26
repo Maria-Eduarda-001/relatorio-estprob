@@ -1,6 +1,6 @@
 ---
 title: "Maria Eduarda Motta Rosa"
-image: "logo.png"
+image: "Imagem.jpeg"
 links:
   - label: GitHub
     url: "https://github.com/Maria-Eduarda-001"

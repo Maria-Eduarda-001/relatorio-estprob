@@ -1,7 +1,7 @@
 ---
 # Só mude aqui!!!!
 author: "Maria Eduarda Motta Rosa"
-title: "Relatório de Aula Prática 01"
+title: "Relatório de Aula Prática 01 - Catapulta"
 bibliography: referencias.bib
 # A partir daqui nao faca alteracoes!!!!!
 link-citations: true
