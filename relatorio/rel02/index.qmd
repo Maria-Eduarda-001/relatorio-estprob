@@ -36,6 +36,8 @@ Pegamos um exercício do livro fornecido online pelo professor. Aqui analisaremo
 
 ## 🎯 Objetivos
 
+AQUIII
+
 ### Objetivo geral
 
 Descrever o objetivo principal da prática.
