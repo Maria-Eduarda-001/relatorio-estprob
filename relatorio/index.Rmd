@@ -27,7 +27,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Mais informações sobre mim
 
-Acesse: [Nome do Aluno](info/index.html){target="_blank"}
+Acesse: [Maria Eduarda Motta Rosa](https://maria-eduarda-001.github.io/relatorio-estprob/){target="_blank"}
 
 # Página dos alunos da disciplina
 
