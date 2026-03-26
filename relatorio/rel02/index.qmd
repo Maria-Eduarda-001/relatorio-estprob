@@ -36,7 +36,7 @@ Pegamos um exercício do livro fornecido online pelo professor. Aqui analisaremo
 
 ## 🎯 Objetivos
 
-AQUIII
+O objetivo era identificar as causas prováveis da falha que vitimou 8 astronautas da tripulação do foguete Challenger.
 
 ### Objetivo geral
 
