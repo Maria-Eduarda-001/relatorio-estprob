@@ -79,8 +79,11 @@ Essa variável também vai influenciar na tensão do elástico mas em menor inte
 Apresente os conceitos principais:
 
 - Média
+
 - Variância
+
 - Desvio padrão
+
 - Amostragem
 
 $$
