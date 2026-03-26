@@ -38,22 +38,18 @@ Pegamos um exercício do livro fornecido online pelo professor. Aqui analisaremo
 
 O objetivo era identificar as causas prováveis da falha que vitimou 8 astronautas da tripulação do foguete Challenger.
 
-### Objetivo geral
-
-Descrever o objetivo principal da prática.
-
 ### Objetivos específicos
 
-- Coletar dados experimentais  
-- Aplicar estatística descritiva  
-- Construir gráficos  
-- Interpretar resultados  
+- Analisar os dados encontrados no exercício;
+- Aplicar os conhecimentos de R e de estatística nesses dados;
+- Tabular as informações;
+- Analisar os dados da tabulação feita em R;
 
 ---
 
 ## 📚  Fundamentação Teórica
 
-Apresente os conceitos principais:
+Apresentando os conceitos principais:
 
 - Média
 - Variância
