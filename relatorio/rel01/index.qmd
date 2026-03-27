@@ -1,7 +1,7 @@
 ---
 # Só mude aqui!!!!
-author: "Maria Eduarda Motta Rosa"
-title: "Relatório de Aula Prática 01 - Catapulta"
+author: "Maria Eduarda Motta e Wadmilson e Cruz"
+title: "Relatório sobre o experimento da Catapulta"
 bibliography: referencias.bib
 # A partir daqui nao faca alteracoes!!!!!
 link-citations: true
@@ -28,7 +28,7 @@ execute:
 
 ## 📌 Introdução
 
-Nesse experimento vamos observar como os fatores controlados da catapulta podem influenciar o lançamento da bolinha durante os 22 lançamentos.
+Sabemos que a palavra catapulta, é conhecida desdos tempos atigos, usados para diversos fins como militares, muita das vezes para diversão, e muitos outros que poderiamos até continuar mencionando, mas esse não é o nosso caso. Usamo-o para fazer um xperimento na aula da disciplina de estatistica e probabilidade. O experimento consistiu na observação dos resultados obitidos atraves da  sequencia do lançamento da bolinha por intermedio da catapulta, usando diferentes niveis de angulos (O- -> Nível 2, A+ -> Nível 3, B+ ->90°, A- -> Nível 4). Fizemos vinte dois lançamentos, e usamos a trena para medir a distacia que a bolinha percorreu apos ser lançada da catapulta, e atraves dessas medidas coletadas para analises estatisticos, nos permitiu observar como cada variavel presente (pois eram muitos) impactou a trajetoria da bola. 
 
 > Exemplo: análise da variabilidade em experimentos físicos utilizando uma catapulta.
 
@@ -36,14 +36,12 @@ Nesse experimento vamos observar como os fatores controlados da catapulta podem 
 
 ## 🎯 Objetivos
 
-Vamos observar os lançamentos com base nos níveis das variáveis utilizadas.
+Analisaremos como essas variáveis podem ou não influenciar a distância percorrida pela bolinha.
 
 ### Objetivos específicos
 
-- Coletar os dados obtidos;
-- Organizar esses dados para a tabulação;
-- Fazer o código da tabulação em R;
-- Interpretar resultados obtidos;
+Iremos coletar os dados através da medição da distacia que a bola percoreu,organizaremos esses dados para a tabulação, organizaremos e analisaremos esses dados na tabulação usando alinguagem R, e apos tudo isso discutiremos suas implicações (intepretaremos os resultados obtidos).
+
 
 ---
 
@@ -58,7 +56,7 @@ Vamos observar os lançamentos com base nos níveis das variáveis utilizadas.
 
 ### O Nível O-
 
-Ponto de referência, é o apoio superior da catapulta, pode influenciar o alinha mento ou ponto de apoio; essa variável afeta a geometria do movimento, assim ela influencia de forma mais indireta, atuando junto de A e de B. Pode vir a afetar a reprodução dos lançamentos;
+Ponto de referência, é o apoio superior da catapulta, pode influenciar o alinhamento ou ponto de apoio; essa variável afeta a geometria do movimento, assim ela influencia de forma mais indireta, atuando junto de A e de B. Pode vir a afetar a reprodução dos lançamentos;
 
 ### O Nível A+
 
@@ -66,7 +64,7 @@ Essa posição da tensão do elástico, representa a deformação do elástico, 
 
 ### O Nível B+
 
-Essa posição está relacionada ao ajuste do ângulo da catapulta, é um batente regulador do ângulo final, assim ele define o ângulo de saída da bolinha e acab influenciando o tempo do voo. Quando são ângulos próximos de 45° o alcance da bolinha maior será o alcance dela, assim sendo com ângulos muito baixos teremos uma "bola rasteira" e com ângulos muito altos essa bola subirá mais e consequentemente percorerrá uma distância horizontal menor;
+Essa posição está relacionada ao ajuste do ângulo da catapulta, é um batente regulador do ângulo final, assim ele define o ângulo de saída da bolinha e acaba influenciando o tempo do voo. Quando são ângulos próximos de 45° ao alcance da bolinha maior será o alcance dela. Assim sendo com ângulos muito baixos teremos uma "bola rasteira" e com ângulos muito altos essa bola subirá mais e consequentemente percorerrá uma distância horizontal menor;
 
 ### O Nível A-
 
@@ -78,13 +76,15 @@ Essa variável também vai influenciar na tensão do elástico mas em menor inte
 
 Apresente os conceitos principais:
 
-- Média
+- Média é calculada somando todos os valores e dividindo pelo numero total de observação.
 
-- Variância
+- Variância é a medidida da disperção dos dados em relação a media.
+ 
+- Desvio padrão é rais quadrada da variança, que fornece uma ideia da dispersão dos dados.
 
-- Desvio padrão
 
-- Amostragem
+- Amostragem é o processo de selecionar um subconjunto de indivíduos de um grupo maior para estimar características da população.
+
 
 $$
 \bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
@@ -110,12 +110,24 @@ Descreva como o experimento foi realizado.
 
 Apresentando e interpretando os resultados obtidos dos dados coletados no experimento.
 
+dados <- c(326, 294.8, 296.7, 299, 295.8, 298.5, 300.6, 285.1, 287.1, 292.3, 290.8, 287.9, 282.9, 285.3, 281.5, 278.4, 276.4, 281.7, 277.1, 285.3, 277.3, 281.8)
+
+
 - Descreva os principais resultados numéricos (média, variabilidade, etc.).
+
+# Média: 288.41 cm
+# Mediana: 285.70 cm
+# Moda: 285.3 cm (mais frequente)
+# Variância: 65.42
+# Desvio padrão: 8.09 cm
+
 - Comente o comportamento dos dados observados nos gráficos.
 - Indique se há presença de valores discrepantes (outliers).
 - Avalie se os dados apresentam simetria ou tendência.
 
 Em seguida, discuta os resultados à luz dos conceitos teóricos:
+
+A média de 288.41 cm reflete bom controle, mas dispersão (DP=8.09 cm) indica variações por força inconsistente ou medição. Moda próxima à mediana sugere simetria. Ângulos ~45° maximizaram distância, enquanto 90° minimizou (queda vertical). Erros: vento, fricção ignorada.
 
 - Os resultados estão de acordo com o esperado?
 - Há grande variabilidade? O que isso significa no contexto do experimento?
