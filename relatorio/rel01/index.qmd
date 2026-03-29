@@ -121,11 +121,53 @@ sort(dados)
 
 - Descreva os principais resultados numéricos (média, variabilidade, etc.).
 
-# Média: 288.41 cm
-# Mediana: 285.70 cm
-# Moda: 285.3 cm (mais frequente)
-# Variância: 65.42
-# Desvio padrão: 8.09 cm
+- Média: 289.36 cm
+- Mediana: 288.11 cm
+- Moda: 286.73 cm
+- Variância: 125.8
+- Desvio padrão: 11.22 cm
+
+```{r,eval = TRUE}
+library(leem)
+
+dados <- c(326, 294.8, 296.7, 299, 295.8, 298.5, 300.6, 285.1, 287.1, 292.3, 290.8, 287.9, 282.9, 285.3, 281.5, 278.4, 276.4, 281.7, 277.1, 285.3, 277.3, 281.8)
+
+meus_dados <- new_leem(dados, variable = "continuous")
+
+media_dados   <- mean(meus_dados)
+mediana_dados <- median(meus_dados)
+moda_dados    <- mfreq(meus_dados)
+
+meus_dados <- new_leem(dados, variable = "continuous")
+
+print(paste("A Média pela tabela é:", round(media_dados, 2)))
+print(paste("A Mediana pela tabela é:", round(mediana_dados, 2)))
+print(paste("A Moda pela tabela é:", moda_dados))
+
+tab_dados <- new_leem(dados, variable = "continuous")
+
+media_exata   <- mean(dados)
+mediana_exata <- median(dados)
+tabela_moda <- table(dados)
+moda_exata  <- names(tabela_moda[tabela_moda == max(tabela_moda)])
+
+print(paste("A Média exata é:", round(media_exata, 2)))
+print(paste("A Mediana exata é:", round(mediana_exata, 2)))
+print(paste("A Moda exata é:", moda_exata))
+
+variancia_dados <- var(dados)
+desvio_padrao_dados <- sd(dados)
+
+print(paste("A Variância exata é:", round(variancia_dados, 2)))
+print(paste("O Desvio Padrão exato é:", round(desvio_padrao_dados, 2)))
+
+variancia_tab <- variance(meus_dados)
+desvio_padrao_tab <- leem::mstde(meus_dados)
+
+print(paste("A Variância pela tabela é:", round(variancia_tab, 2)))
+print(paste("O Desvio Padrão pela tabela é:", round(desvio_padrao_tab, 2)))
+
+```
 
 - Comente o comportamento dos dados observados nos gráficos.
 - Indique se há presença de valores discrepantes (outliers).
