@@ -186,6 +186,8 @@ print(paste("A Moda pela tabela é:", moda_dados))
 
 tab_dados <- new_leem(dados, variable = "continuous")
 
+tabfreq(tab_dados)
+
 media_exata   <- mean(dados)
 mediana_exata <- median(dados)
 tabela_moda <- table(dados)
