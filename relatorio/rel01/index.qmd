@@ -179,7 +179,7 @@ tab_dados <- new_leem(dados, variable = "continuous")
 
 tabfreq(tab_dados, k = 3)
 
-print("Agora mostrarei a pequena diferença da média, mediana, moda, variância e desvio padrão pela tabela e da média a partir dos dados organizados.")
+print("Agora mostrarei a pequena diferença da média, mediana, moda, variância e desvio padrão pela tabela e a partir dos dados organizados.")
 
 media_tab   <- mean(meus_dados)
 print(paste("A Média pela tabela é:", round(media_tab, 2)))
