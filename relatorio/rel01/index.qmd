@@ -127,6 +127,46 @@ sort(dados)
 - Variância: 125.8
 - Desvio padrão: 11.22 cm
 
+### Comentários:
+
+- Comente o comportamento dos dados observados nos gráficos.
+- Indique se há presença de valores discrepantes (outliers).
+- Avalie se os dados apresentam simetria ou tendência.
+
+
+Em seguida, discuta os resultados à luz dos conceitos teóricos:
+
+
+- A média de 289.2 cm reflete bom controle, mas o desvio padrão (DP = 11,22 cm) indica variações por força inconsistente ou medição. Ângulos de 45° maximizam a distância, enquanto ângulos de 90° minimizam (gerando uma queda vertical). Erros: vento, fricção ignorada.
+
+- Tem a presença de valores discrepantes, já que a maior parte dos valores estão entre 276 e 300, enquanto temos um valor de 326, o que vendo os valores é consideravelmente afastado, ele que fez com que a média > mediana, mas isso pode ter sido provocado por n motivos, como a força elástica, a mudança na posição da mesa, o tempo que o elástico da catapulta ficou pressionado para baixo e etc. Mas no geral, com exceção desse valor, os dados se mostraram relativamente próximos.
+
+- Comparando a média, a mediana e a moda vemos que a média > mediana > moda, isso mostra que os dados apresentam uma assimetria positiva (no caso, a direita), assim sendo, existe uma tendência dos dados se concentrarem em valores menores (mais próximos do limite inferior da distribuição).
+
+- Os resultados estão de acordo com o esperado?
+- Há grande variabilidade? O que isso significa no contexto do experimento?
+- Quais fatores podem ter influenciado os resultados?
+- Existem possíveis fontes de erro experimental?
+
+
+- Sim, acredito que os resultados estão de acordo com o esperado, visto que a maioria seguiu um padrão, com apenas um muito diferente.
+
+- Pesquisando vi que o desvio de 11,22 cm é bom, mostrando um lançamento consistente, mas não totalmente preciso (o que acredito ser normal e inclusive esperdo em experimentos manuais).
+
+- Como coloquei a cima, os fatores que podem ter influenciado os resultados são: vento, fricção, ângulo, força elástica, e acredito que possíveis fontes de erro também estariam relacionadas a esses fatores e claro a ser um experimento feito em sala de aula, assim com várias coisas para se distrair, o que pode ter distraido quem estava com a trena (a respeito dos milímetos de distância) e quem estava marcando onde a bolinha caiu (já que o piso é todo marcado, e isso pode ter ajudado a uma possível confusão a respeito de onde a bolinha caiu). Mas no geral, acredito que o experimento tenha sido bem executado por todos os presentes.
+
+
+### 💬 Exemplo de como citar uma referência bibliográfica
+
+Depois de inserido as informaçõe no arquivo **referencias.bib**, use:
+
+- Este relatório foi desenvolvido usando a linguagem R [@Rsoftware];
+- O relatório utilizou o pacote leem{@leem2024};
+- A base para análise de dados contou com os conceitos de Batista [@Rbasico2022] e Morettin e Bussab [@morettin2017];
+
+### 📊  Análise de Dados
+
+
 ```{r,eval = TRUE}
 library(leem)
 
@@ -169,44 +209,6 @@ print(paste("O Desvio Padrão pela tabela é:", round(desvio_padrao_tab, 2)))
 
 ```
 
-- Comente o comportamento dos dados observados nos gráficos.
-- Indique se há presença de valores discrepantes (outliers).
-- Avalie se os dados apresentam simetria ou tendência.
-
-Em seguida, discuta os resultados à luz dos conceitos teóricos:
-
-- A média de 289.2 cm reflete bom controle, mas o desvio padrão (DP=11,22 cm) indica variações por força inconsistente ou medição. Ângulos ~45° maximizaram distância, enquanto 90° minimizou (queda vertical). Erros: vento, fricção ignorada.
-
-- Tem a presença de valores discrepantes, já que a maior parte dos valores estão entre 276 e 300, enquanto temos um valor de 326, o que vendo os valores é consideravelmente afastado, ele que fez com que a média > mediana, mas isso pode ter sido provocado por n motivos, como a força elástica, a mudança na posição da mesa, o tempo que o elástico da catapulta ficou pressionado para baixo e etc. Mas no geral, com exceção desse valor, os dados se mostraram relativamente próximos.
-
-- Comparando a média, a mediana e a moda vemos que a média > mediana > moda, isso mostra que os dados apresentam uma assimetria positiva (no caso, a direita), assim sendo, existe uma tendência dos dados se concentrarem em valores menores (mais próximos do limite inferior da distribuição).
-
-- Os resultados estão de acordo com o esperado?
-- Há grande variabilidade? O que isso significa no contexto do experimento?
-- Quais fatores podem ter influenciado os resultados?
-- Existem possíveis fontes de erro experimental?
-
-- Sim, acredito que os resultados estão de acordo com o esperado, visto que a maioria seguiu um padrão, com apenas um muito diferente.
-
-- Pesquisando vi que o desvio de 11,22 cm é bom, mostrando um lançamento consistente, mas não totalmente preciso (o que acredito ser normal e inclusive esperdo em experimentos manuais).
-
-- Como coloquei a cima, os fatores que podem ter influenciado os resultados são: vento, fricção, ângulo, força elástica, e acredito que possíveis fontes de erro também estariam relacionadas a esses fatores e claro a ser um experimento feito em sala de aula, assim com várias coisas para se distrair, o que pode ter distraido quem estava com a trena (a respeito dos milímetos de distância) e quem estava marcando onde a bolinha caiu (já que o piso é todo marcado, e isso pode ter ajudado a uma possível confusão a respeito de onde a bolinha caiu). Mas no geral, acredito que o experimento tenha sido bem executado por todos os presentes.
-
-Procure não apenas descrever, mas **interpretar os dados**.
-
-### 💬 Exemplo de como citar uma referência bibliográfica
-
-Depois de inserido as informaçõe no arquivo **referencias.bib**, use:
-
-- Segundo @Rbasico2022
-- Tudo é um objeto em R [@Rbasico2022]
-
-### 📊  Análise de Dados
-
-```{r}
-distancia <- c(10.2, 9.8, 10.5, 10.1, 9.9, 10.3)
-distancia
-```
 
 ## 🧠 Considerações finais
 
@@ -217,7 +219,14 @@ Apresente uma síntese dos principais pontos observados no experimento.
 - Comente brevemente sobre a qualidade dos dados coletados.
 - Sugira possíveis melhorias no procedimento experimental.
 
-Evite repetir apenas os resultados; foque nas **conclusões e reflexões** sobre a prática realizada.
+- Como o objetivo principal dessa prática era realizar o lançamento da bolinha utilizando uma catapulta manual para coletar dados experimentais, organizar esses dados e calcular medidas e variabilidade, acredito que este objetivo foi alcançado, já que assim que processamos os dados através do R, geramos esse relatório que permite a interpretação física do fenômeno.
+
+- Essa prática permitiu compreender melhor a diferença média e mediana na presença de valores discrepantes (a média é altamente sensível). Além disso melhorar nossos conhecimentos a respeito do pacote leem para ajudar com a tabulação e análise de dados.
+
+- Acredito que a qualidade seja boa, já que a maioria dos lançamentos apresentou uma dispersão baixa, mostrando um padrão na execussão.
+
+- Acho que para melhorar o experimento, das próximas vezes podemos utilizar mais presilhas (já que nesse experimento uma das presilhas se soltou, o que pode ter influenciado os resultados); poderíamos também gravar o impacto da bolinha em câmera lenta (para identificar com maior exatidão qual será o ponto da queda); e também usar outros elásticos para garantir a força elástica constante.
+
 
 ## Aprenda Quarto
 
