@@ -1,6 +1,6 @@
 ---
 title: "Relatórios da Disciplina Estatística Experimental (UFSJ)"
-author: "[Maria Eduarda Motta Rosa](https://github.com/Maria-Eduarda-001) | [ENG.MECATRÔNICA/UFSJ](https://ufsj.edu.br)"
+author: "[Maria Eduarda Motta Rosa](https://github.com/Maria-Eduarda-001) | [ENG.MECATRÔNICA/UFSJ](https://ufsj.edu.br) e [Wadmilson Costa da Fonseca e Cruz](https://github.com/Wadmilson/relatorio-estprob-.git) |[ENG.MECATRONICA/UFSJ](https://ufsj.edu.br)"
 date: "`r format(Sys.time(), '%d %B, %Y, %Hh:%Mmin:%Sseg')`"
 toc-title: "Sumário"
 output:
@@ -27,7 +27,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Mais informações sobre mim
 
-Acesse: [Maria Eduarda Motta Rosa](https://maria-eduarda-001.github.io/relatorio-estprob/){target="_blank"}
+Acesse: [Maria Eduarda Motta Rosa](https://maria-eduarda-001.github.io/relatorio-estprob/){target="_blank"} e [Wadmilson Costa da Fonseca e Cruz](https://wadmilson.github.io/relatorio-estprob-/){target="_blank"}
 
 # Página dos alunos da disciplina
 
